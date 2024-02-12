@@ -6,23 +6,24 @@ class Program
     {
         // Ask the user to enter a real number
         Console.Write("Enter a real number: ");
+
         double x = double.Parse(Console.ReadLine());
 
         // Define the intervals
-        double interval1Start = 2;
-        double interval1End = 3;
-        double interval2Start = 0;
-        double interval2End = 1;
-        double interval3Start = -10;
-        double interval3End = -2;
+        double interval1_1 = 2;
+        double interval1_2 = 3;
+        double interval2_1 = 0;
+        double interval2_2 = 1;
+        double interval3_1 = -10;
+        double interval3_2 = -2;
 
         // Test membership using only < and ==
-        bool condition1 = (x >= interval1Start) && (x < interval1End);
-        bool condition2 = (x > interval2Start) && (x <= interval2End);
-        bool condition3 = (x >= interval3Start) && (x <= interval3End);
+        bool condt1 = (x >= interval1_1) && (x < interval1_2);
+        bool condt2 = (x > interval2_1) && (x <= interval2_2);
+        bool condt3 = (x >= interval3_1) && (x <= interval3_2);
 
         // Display the result based on logical operators
-        if (((condition1 || condition2) || (condition3)))
+        if (((condt1 || condt2) || (condt3)))
         {
             Console.WriteLine("x belongs to I");
         }
